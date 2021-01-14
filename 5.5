@@ -1,0 +1,23 @@
+#include<iostream>
+#include<string> 
+
+int main()
+{
+	using namespace std;
+	//const string Month[12]=
+	const char * Month[12]=  //指针数组 
+	{
+		"January","February","March","April","May","June",
+		"June","August","September","October","November","December",
+	};
+	int sales_volume[12],count;
+	for(int i=0;i<12;i++)
+	{
+		cout<<"Enter the sales-volume of "<<Month[i]<<":\t";
+		cin>>sales_volume[i];
+		count+=sales_volume[i];
+	}
+	cout<<"The sum of sales-volume are "<<count;
+	
+	return 0;
+}
